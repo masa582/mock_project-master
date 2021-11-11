@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /* font-size: 62.5%; */
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+label {
+    cursor: pointer
+}
+
+button {
+    cursor: pointer
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+/* ここから　全体に適用 */
+
+box-sizing: border-box *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+[data-aos="text-animation"]>div>span {
+    overflow-y: hidden;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translate(0, 70%);
+    transform: translate(0, 70%)
+}
+
+[data-aos="text-animation"].aos-animate>div>span {
+    -webkit-animation-name: textAnimationText;
+    animation-name: textAnimationText;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+}
+
+[data-aos="topsec-animation"].aos-animate {
+    -webkit-animation-name: topsecAnimation;
+    animation-name: topsecAnimation;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+}
+
+[data-aos="title-animation"].aos-animate span {
+    -webkit-animation-name: titleAnimationText;
+    animation-name: titleAnimationText;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+[data-aos="title-animation"].aos-animate:before {
+    -webkit-animation-name: titleAnimationLine;
+    animation-name: titleAnimationLine;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+#index .secBox_img.aos-animate {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+#index .secBox_img.aos-animate img {
+    opacity: 1
+}
+
+#index .secBox_img#about_usImg.aos-animate img {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+#index .secWrap .sec.aos-animate .secTit span {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px)
+}
+
+#index .secWrap .sec.aos-animate .secTit::before {
+    height: 140px
+}
+
+[data-aos="new-animation"]:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: #EAEAEA;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s
+}
+
+[data-aos="new-animation"].aos-animate:before {
+    width: 0
+}
+
+#business.index .project .projectBox.aos-animate .projectBox_img:before {
+    width: 0
+}
+
+#business.index .project .projectBox.aos-animate .projectBox_img:before {
+    width: 0
+}
+
+[data-aos="new-animation2"] {
+    position: relative
+}
+
+[data-aos="new-animation2"]:after, [data-aos="new-animation2"]:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10
+}
+
+[data-aos="new-animation2"]:after {
+    background: #EAEAEA;
+    z-index: 1
+}
+
+[data-aos="new-animation2"].aos-animate:after {
+    -webkit-animation-name: slideCoverBottom;
+    animation-name: slideCoverBottom;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+[data-aos="new-animation2"].aos-animate:before {
+    -webkit-animation-name: slideCoverTop;
+    animation-name: slideCoverTop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+/* ここから  開始　　　　　ここから  開始　　　　　　　　　　　*/
+
+.index {
+    color: #fff;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    /* position: relative; */
+}
+
+.header-wrap {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    position: fixed;
+    z-index: 300;
+    top: 0px;
+    display: block;
+    overflow: hidden;
+    background: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    z-index: 300;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 120px;
+    /* top: 20px; */
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    height: 70px;
+    width: 388px;
+    cursor: pointer;
+    z-index: 300;
+    /* 変更 */
+}
+
+.header-nav {
+    z-index: 300;
+    /* 変更 */
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li {
+    margin-right: 250px;
+    font-size: 3rem;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    z-index: 100;
+    padding-bottom: 6px
+}
+
+/* ここから背景動画 の範囲 */
+
+/* firstviewの会社名の部分 */
+
+.main {
+    overflow: hidden;
+}
+
+.c-scrolldown {
+    --line-height: 150px;
+    --line-height-abs: -150px;
+    font-family: niveau-grotesk, sans-serif;
+    width: 1px;
+    height: var(--line-height);
+    position: absolute;
+    top: calc(50% - var(--line-height) / 2);
+    right: 35px;
+    margin: 0 auto;
+    z-index: 3
+}
+
+.c-scrolldown .c-label {
+    position: absolute;
+    bottom: 125px;
+    left: -1.3em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    line-height: 1
+}
+
+.c-scrolldown .c-baseliine {
+    position: absolute;
+    z-index: 0;
+    width: 1px;
+    height: var(--line-height);
+    background: rgba(255, 255, 255, 0.25)
+}
+
+.c-scrolldown .c-line {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, #fff 50%, rgba(255, 255, 255, 0) 50%);
+    background-position: 0 var(--line-height-abs);
+    background-size: 100% 200%;
+    -webkit-animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+    animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite
+}
+
+#index .c-scrolldown {
+    opacity: 0;
+    -webkit-transform: translate(50px, 0);
+    transform: translate(50px, 0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 5.4s;
+    transition-delay: 5.4s
+}
+
+#index.is-load .c-scrolldown {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+#index .backgroundMovie .cover.is-active {
+    background: rgba(0, 0, 0, 0.6)
+}
+
+.header.is-active {
+    background: #404040 !important
+}
+
+.pointer.is-active {
+    -webkit-transform: scale(2);
+    transform: scale(2)
+}
+
+/* bodyの高さ */
+
+/* 背景画像の部分 */
+
+.main {
+    position: relative;
+    height: 160vh;
+    background-color: wheat;
+}
+
+.news_mainBg_wrapper {
+    height: 150vh;
+    height: calc(var(--vh, 1vh) * 100);
+    top: 100px;
+    /* position: absolute; */
+    /* z-index: 1;変更 */
+}
+
+.news_maingBg_inner {
+    position: relative;
+    /* 変更 */
+}
+
+.news_mainBg {
+    background-image: url("/img/news.jpg");
+    height: 60vh;
+    display: block;
+}
+
+.news_accent {
+    background-color: #06397D;
+    height: 20vh;
+    /* position: relative; */
+}
+
+.news_accent_ttl {
+    top: 63rem;
+    left: 19rem;
+    position: absolute;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.news_mainsec {
+    margin: 10rem 20rem;
+}
+
+.newsCntSec {
+    width: 60vw;
+    margin-right: 5rem;
+}
+
+.news_mainsec dl {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.4rem 2rem 1.4rem 0rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #707070;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.news_mainsec dt {
+    margin-right: 2rem;
+    text-align: right;
+    display: inline-block;
+    width: 12rem;
+    font-size: 1.4rem;
+}
+
+.news_mainsec dd {
+    /* padding-left: 6rem; */
+}
+
+.newsCard_oshirase {
+    padding: 0.5rem;
+    background: #36E21F;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.newsCard_service {
+    padding: 0.5rem;
+    background: #9E4A91;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.newsCnt {
+    padding-left: 3rem;
+}
+
+/* news section　ここまで */
+
+.secBox_btn {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.c-buttonStyle1 {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    font-family: niveau-grotesk, sans-serif;
+    padding-bottom: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.c-buttonStyle1 .c-border:before, .c-buttonStyle1 .c-border:after {
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.c-buttonStyle1 .c-border:before {
+    width: 100%;
+    background: #7a7a7a
+}
+
+.c-buttonStyle1 .c-border:after {
+    width: 50%;
+    background: #fff
+}
+
+.c-buttonStyle1 .c-icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.c-buttonStyle1 .c-icon:before, .c-buttonStyle1 .c-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff
+}
+
+.c-buttonStyle1 .c-icon:before {
+    width: 100%;
+    height: 1px;
+    top: calc(50% - 0.5px);
+    left: 0
+}
+
+.c-buttonStyle1 .c-icon:after {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 0.5px)
+}
+
+.c-buttonStyle1:hover .c-border:after {
+    width: 100%
+}
+
+.c-buttonStyle1:hover .c-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.is-hover .c-buttonStyle1 .c-border:after {
+    width: 100%
+}
+
+.is-hover .c-buttonStyle1 .c-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.c-scrolldown .c-label {
+    position: absolute;
+    bottom: 125px;
+    left: -1.3em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    line-height: 1
+}
+
+.navigationInnerList {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative
+}
+
+.navigationInnerList li>a .c-border:before {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 0%;
+    background: #000
+    /*変更済み*/
+}
+
+.navigationInnerList li>a {
+    position: relative;
+    font-family: niveau-grotesk, sans-serif;
+    padding-bottom: 6px
+}
+
+.navigationInnerList li>a.is-current .c-border:before, .navigationInnerList li>a.is-open .c-border:before, .navigationInnerList li>a:hover .c-border:before {
+    width: 100%
+}
+
+.navigationInnerList li .subNavTit a .c-border:before, .navigationInnerList li .subNavTit a .c-border:after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.navigationInnerList li .subNavTit a .c-border:before {
+    width: 100%;
+    background: #d5d5d5
+}
+
+.navigationInnerList li .subNavTit a .c-border:after {
+    width: 50%;
+    background: #2f2f2f
+}
+
+.navigationInnerList li .subNavTit a:hover .c-border:after {
+    width: 100%
+}
+
+.navigationInnerList li .subNavItem a:hover .c-border:after {
+    width: 100%
+}
+
+/* news listで使用 */
+
+.c-border-font {
+    color: black;
+}
+
+/* footerの部分 */
+
+.footer {
+    display: block;
+    background: #000;
+    height: 300px;
+    padding: 50px 5%;
+    position: absolute;
+    width: 89%;
+    z-index: 101;
+}
+
+.footer_logo {
+    width: inherit;
+}
+
+.footer_logo img {
+    height: 70px;
+    width: 388px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.footer_address {
+    color: #fff;
+}
+
+.footerCnt {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 10rem;
+}
+
+.footerBtm {
+    display: flex;
+}
+
+.footerCright {
+    font-size: 2rem;
+    padding-top: 8rem;
+    padding-right: 50rem;
+    color: #fff;
+}
+
+
+.footerSns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSnsttl {
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+.footerSns img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.footerSnsttl {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
