@@ -28,7 +28,7 @@ $(function () {
 });
 
 
-// coachtech用のモーダル　参照用
+// モーダル　参照用
 
 const openBtn = document.getElementById('openBtn');
 const closeBtn = document.getElementById('closeBtn');
@@ -49,8 +49,6 @@ window.addEventListener('click', (e) => {
 /*
  * common.funcs.js
  */
-
-
 
 
 $(window).bind('load', function() {
