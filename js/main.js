@@ -1,3 +1,22 @@
+ var mySwiper = new Swiper(".swiper-container", {
+        // スライドの仕方
+        effect: "fade",
+        // 最後まで行ったら最初に
+        loop: true,
+        // 画像がスライドする際にかかる時間
+        speed: 500,
+        autoplay: {
+          delay: 4000, // 画像が何秒ごとに自動スライドするか
+          disableOnInteraction: false //ユーザーに操作されても自動再生停止しない
+        },
+        // ページネーション
+        pagination: {
+          el: ".swiper-pagination", //ページネーションのクラス
+          type: "bullets", //ページネーションの見た目のタイプ
+          clickable: true //ページネーションをクリックでスライド移動
+        }
+      });
+
 // モーダル関連　test用
 $(function () {
   $('.js-open').click(function () {
@@ -7,10 +26,6 @@ $(function () {
     $('#overlay, .modal-window').fadeOut();
   });
 });
-
-// Jquery test用
-
-// $("li").css("color", "red");
 
 
 // coachtech用のモーダル　参照用
@@ -35,29 +50,7 @@ window.addEventListener('click', (e) => {
  * common.funcs.js
  */
 
-window.onload = function() {
-	var mySwiper = new Swiper ('.swiper-container', {
-		slidesPerView:1.5,//画像を何枚表示するか
-		spaceBetween: 10,//何ピクセル画像の間隔をあけるか
-		centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
-		//自動再生する場合
-		autoplay: {
-		delay: 3000, //3秒後に次の画像に代わる
-		},
-		loop: true,//最後の画像までいったらループする
-		//ページネーションをつける場合
-		pagination: {
-		 el: '.swiper-pagination',
-		 type: 'bullets',
-		 clickable: true,
-		},
-		//左右のナビゲーションをつける場合
-		navigation: {
-		 nextEl: '.swiper-button-next',
-		 prevEl: '.swiper-button-prev',
-		}
-	});
-}
+
 
 
 $(window).bind('load', function() {

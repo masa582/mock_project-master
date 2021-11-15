@@ -7,74 +7,7 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -103,17 +36,7 @@ h2 {
   font-size: 2rem;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -129,15 +52,11 @@ nav ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -150,10 +69,7 @@ a {
   background: transparent;
 }
 
-a,
-a:visited,
-a:hover,
-a:active {
+a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
 }
@@ -179,8 +95,7 @@ del {
   text-decoration: line-through;
 }
 
-abbr[title],
-dfn[title] {
+abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
@@ -201,8 +116,7 @@ hr {
   padding: 0;
 }
 
-input,
-select {
+input, select {
   vertical-align: middle;
 }
 
@@ -213,7 +127,7 @@ box-sizing: border-box *, *:before, *:after {
   box-sizing: border-box;
 }
 
-[data-aos="text-animation"] > div > span {
+[data-aos="text-animation"]>div>span {
   overflow-y: hidden;
   display: inline-block;
   opacity: 0;
@@ -221,7 +135,7 @@ box-sizing: border-box *, *:before, *:after {
   transform: translate(0, 70%);
 }
 
-[data-aos="text-animation"].aos-animate > div > span {
+[data-aos="text-animation"].aos-animate>div>span {
   -webkit-animation-name: textAnimationText;
   animation-name: textAnimationText;
   -webkit-animation-delay: 0.4s;
@@ -325,8 +239,7 @@ box-sizing: border-box *, *:before, *:after {
   position: relative;
 }
 
-[data-aos="new-animation2"]:after,
-[data-aos="new-animation2"]:before {
+[data-aos="new-animation2"]:after, [data-aos="new-animation2"]:before {
   content: "";
   display: block;
   width: 100%;
@@ -500,18 +413,11 @@ box-sizing: border-box *, *:before, *:after {
   width: 100%;
   height: 100%;
   display: block;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(50%, #fff),
-    color-stop(50%, rgba(255, 255, 255, 0))
-  );
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, #fff 50%, rgba(255, 255, 255, 0) 50%);
   background-position: 0 var(--line-height-abs);
   background-size: 100% 200%;
-  -webkit-animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards
-    infinite;
+  -webkit-animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
   animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
 }
 
@@ -606,8 +512,7 @@ box-sizing: border-box *, *:before, *:after {
   transition: 0.3s;
 }
 
-.c-buttonStyle1 .c-border:before,
-.c-buttonStyle1 .c-border:after {
+.c-buttonStyle1 .c-border:before, .c-buttonStyle1 .c-border:after {
   content: "";
   display: block;
   height: 1px;
@@ -637,8 +542,7 @@ box-sizing: border-box *, *:before, *:after {
   transition: 0.3s;
 }
 
-.c-buttonStyle1 .c-icon:before,
-.c-buttonStyle1 .c-icon:after {
+.c-buttonStyle1 .c-icon:before, .c-buttonStyle1 .c-icon:after {
   content: "";
   display: block;
   position: absolute;
@@ -703,7 +607,7 @@ box-sizing: border-box *, *:before, *:after {
   position: relative;
 }
 
-.navigationInnerList li > a .c-border:before {
+.navigationInnerList li>a .c-border:before {
   content: "";
   display: block;
   height: 1px;
@@ -716,20 +620,17 @@ box-sizing: border-box *, *:before, *:after {
   background: #fff;
 }
 
-.navigationInnerList li > a {
+.navigationInnerList li>a {
   position: relative;
   font-family: niveau-grotesk, sans-serif;
   padding-bottom: 6px;
 }
 
-.navigationInnerList li > a.is-current .c-border:before,
-.navigationInnerList li > a.is-open .c-border:before,
-.navigationInnerList li > a:hover .c-border:before {
+.navigationInnerList li>a.is-current .c-border:before, .navigationInnerList li>a.is-open .c-border:before, .navigationInnerList li>a:hover .c-border:before {
   width: 100%;
 }
 
-.navigationInnerList li .subNavTit a .c-border:before,
-.navigationInnerList li .subNavTit a .c-border:after {
+.navigationInnerList li .subNavTit a .c-border:before, .navigationInnerList li .subNavTit a .c-border:after {
   content: "";
   display: block;
   height: 1px;
@@ -759,6 +660,7 @@ box-sizing: border-box *, *:before, *:after {
 }
 
 /* news listで使用 */
+
 .c-border-font {
   color: black;
 }
@@ -812,33 +714,27 @@ box-sizing: border-box *, *:before, *:after {
 /* 企業情報の部分 */
 
 .company {
-  height: 55vh;
+  height: 42vh;
   margin: 0rem 20rem 20rem 20rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; /*追加*/
-}
-
-.companyImg {
-  width: 90%;
-  /* max-width: 30%; */
-  margin-top: 5rem;
-}
-
-.companyImg2 {
-  display: inline;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  align-self: center;
+  align-items: stretch;
 }
 
 .companyCnt {
-  width: 55%;
+  width: 45%;
   height: 50vh;
   min-height: 400px;
-  margin-right: 13%;
-  padding-top: 10px;
+  margin-right: 2rem;
+}
+
+.companyImg {
+  /* width: auto; */
+  max-width: 100%;
+  min-height: 300px;
+  object-fit: fill;
+  align-self: center;
+  /*上下の中央揃え*/
 }
 
 .companyTlt {
@@ -847,85 +743,95 @@ box-sizing: border-box *, *:before, *:after {
 }
 
 .companyTlt_EN {
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
 }
 
 .company_Txt1 {
   font-size: 3rem;
-  margin-bottom: 9rem;
+  margin-bottom: 6rem;
 }
 
 .company_Txt2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-/* swiperの部分 */
-
-.swiper {
-  width: 45%;
-  height: 60vh;
-  min-height: 400px;
-  min-width: 400px;
-  margin-left: 2rem;
-  position: relative;
-}
-
 .swiper-container {
-  position: relative;
+  width: 400px;
+  height: 400px;
+  /* background-color: #000; */
   overflow: hidden;
-  padding: 20px 0;
-  height: 40vw;
-  width: 50%;
-  max-height: 600px;
-  height: 60vh;
-  min-height: 400px;
-  min-width: 400px;
-  margin-left: 2rem;
+  list-style: none;
+  position: relative;
 }
+
 .swiper-wrapper {
-  min-width: 300px;
-  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+
 .swiper-slide {
-  object-fit: contain;
-  height: 90%;
+  transition-property: transform;
+  flex-shrink: 0;
+  position: relative;
 }
+
+.swiper-img1 img {
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-img2 img {
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-img3 img {
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-img4 img {
+  width: 400px;
+  height: 400px;
+}
+
+/*swiperのページネーション */
 
 .swiper-pagination {
-  /* text-align: end; */
   position: absolute;
-  top: 59vh;
-  left: 180px !important;
-  width: 45%;
-  bottom: -10px !important;
-  height: 30px !important;
-  z-index: 200;
-  overflow: hidden;
+  text-align: right;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 102;
 }
 
-.swiper-pagenation-wrapper {
-  overflow: hidden;
-  bottom: -20px !important;
-}
+/* swiperのbulletsの変更 */
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  /* border: solid 3px #B2B2B2; */
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid transparent;
+  width: 15px;
+  /* 幅 */
+  height: 15px;
+  /* 高さ */
+  background: #EAEAEA;
+  /* 色：緑 */
+  opacity: 0.5;
+  /* 半透明（デフォルトでは0.2） */
 }
 
+/* 現在のスライドのスタイル */
+
 .swiper-pagination-bullet-active {
-  border: 1px solid #fff;
-  background-color: #636363;
+  width: 15px;
+  /* 幅 */
+  height: 15px;
+  /* 高さ */
+  background: #99BEE1;
+  /* 色：黄色 */
   opacity: 1;
-  width: 10px;
-  height: 10px;
-  bottom: -1px;
-  position: relative;
+  
+  /* 不透明 */
 }
 
 /* recruitの部分 */
@@ -1017,7 +923,6 @@ box-sizing: border-box *, *:before, *:after {
   display: block;
   background: #000;
   height: 300px;
-  padding: 50px 5%;
   position: absolute;
   width: 100%;
   /* z-index: 101; */
