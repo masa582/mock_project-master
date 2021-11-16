@@ -279,14 +279,41 @@ box-sizing: border-box *, *:before, *:after {
 
 /* ローディング画面 */
 
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  background-color: #404040;
+  z-index: 1200;
+}
+
+.loading01 {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.loadingImg {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 span.loading01, span.loading01:after {
   display: inline-block;
   width: 150px;
   height: 150px;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(radial, 4 center, 0, 4 center, 4, from(rgba(153, 153, 153, 0.5)), color-stop(0.5, rgba(153, 153, 153, 0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, center 4, 0, center 4, 4, from(rgba(153, 153, 153, 0.5)), color-stop(0.5, rgba(153, 153, 153, 0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, 46 center, 0, 46 center, 4, from(rgba(153, 153, 153, 0.5)), color-stop(0.5, rgba(153, 153, 153, 0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, center 46, 0, center 46, 4, from(rgba(153, 153, 153, 0.5)), color-stop(0.5, rgba(153, 153, 153, 0.5)), color-stop(0.9, transparent), to(transparent));
-  background-image: -webkit-radial-gradient(10% 50%, 4px 4px, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(50% 10%, 4px 4px, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(90% 50%, 4px 4px, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(50% 90%, 4px 4px, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent 95%, transparent);
-  background-image: radial-gradient(4px 4px at 10% 50%, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent), radial-gradient(4px 4px at 50% 10%, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent), radial-gradient(4px 4px at 90% 50%, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent), radial-gradient(4px 4px at 50% 90%, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5) 95%, transparent);
+  background-image: -webkit-gradient(radial, 4 center, 0, 4 center, 4, from(rgba(153,153,153,0.5)), color-stop(0.5, rgba(153,153,153,0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, center 4, 0, center 4, 4, from(rgba(153,153,153,0.5)), color-stop(0.5, rgba(153,153,153,0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, 46 center, 0, 46 center, 4, from(rgba(153,153,153,0.5)), color-stop(0.5, rgba(153,153,153,0.5)), color-stop(0.9, transparent), to(transparent)), -webkit-gradient(radial, center 46, 0, center 46, 4, from(rgba(153,153,153,0.5)), color-stop(0.5, rgba(153,153,153,0.5)), color-stop(0.9, transparent), to(transparent));
+  background-image: -webkit-radial-gradient(10% 50%, 4px 4px, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(50% 10%, 4px 4px, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(90% 50%, 4px 4px, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent 95%, transparent), -webkit-radial-gradient(50% 90%, 4px 4px, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent 95%, transparent);
+  background-image: radial-gradient(4px 4px at 10% 50%, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent), radial-gradient(4px 4px at 50% 10%, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent), radial-gradient(4px 4px at 90% 50%, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent), radial-gradient(4px 4px at 50% 90%, rgba(153,153,153,0.5), rgba(153,153,153,0.5) 95%, transparent);
 }
 
 span.loading01 {
@@ -522,6 +549,7 @@ img {
 .main_inner {
   position: relative;
   z-index: 2;
+  width: 99vw;
 }
 
 .row {
@@ -838,7 +866,12 @@ img {
 
 .serviceImg {
   width: 50%;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
+}
+
+.serviceImg img {
+  height: 400px;
+  object-fit: cover;
 }
 
 .serviceCnt {
@@ -1086,7 +1119,8 @@ img {
   height: 300px;
   position: absolute;
   width: 100%;
-  /* z-index: 101; */
+  /* bottom: -350rem; */
+  z-index: 101;
 }
 
 .footer_logo {
@@ -1132,6 +1166,7 @@ img {
 
 .footerSns img {
   width: 50px;
+  height: 50px;
   margin-right: 1rem;
 }
 
